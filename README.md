@@ -54,11 +54,6 @@ cargo --version
   claude skills的列表中出现gitee-cli
   ```
 ## 使用说明
-- **全局skill中声明**：
-  由于claude总是默认你在使用github，所以在~/.claude/CLAUDE.md 中添加下一句
-  ```
-  * 当仓库是gitee.com时，使用gitee-cli操作远程库及相关资源(PR,issue,release,wiki,lables,notification)
-  ```
 - ** 设置本机的环境变量 **
   ### Linux / macOS
   export GITEE_TOKEN="你的_令牌"

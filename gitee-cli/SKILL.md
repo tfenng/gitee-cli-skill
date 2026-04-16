@@ -1,6 +1,7 @@
 ## 🧠 AI Skill: Gitee CLI (`gitee`)
 
-> Gitee CLI (Rust版) 是码云（Gitee）的非官方命令行工具，通过 API 高效管理仓库、Issue、PR 等资源。此技能专为 AI 编码助手设计，用于指导其使用该工具完成开发任务。
+> 当工程项目的远程仓库是gitee.com时,使用gitee命令来管理代码的仓库、files、Issues、PR、releases 等资源。
+
 
 ### 1. 环境要求与安装
 
