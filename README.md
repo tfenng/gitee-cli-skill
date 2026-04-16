@@ -45,4 +45,11 @@ cargo --version
   gitee --version
   ```
 ## 此skill在Claude中的安装
-
+- **安装命令**：
+  ```bash
+  claude skills install https://github.com/tfenng/gitee-cli-skill.git
+  ```
+- **验证安装**：
+  ```bash
+  claude skills list
+  ```
