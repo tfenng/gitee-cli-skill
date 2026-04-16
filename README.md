@@ -61,11 +61,11 @@ cargo --version
   ```
 - ** 设置本机的环境变量 **
   ### Linux / macOS
-  export GITEE_ACCESS_TOKEN="你的_令牌"
+  export GITEE_TOKEN="你的_令牌"
   ### Windows (CMD)
-  set GITEE_ACCESS_TOKEN="你的_令牌"
+  set GITEE_TOKEN="你的_令牌"
 - **重启claude后验证**：
   以操作issue为例，对话示例：
     “创建一个issues ,仅title:gitee-cli测试成功” 
-    “关闭刚才创建的issues"
-  当然还可以操作PR、release等，由gitee这个客户端的命令提供的功能都可以
+    “为刚才提交的分支创建一个PR"
+    "创建一个新的release"
