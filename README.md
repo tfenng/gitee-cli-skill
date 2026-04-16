@@ -53,3 +53,19 @@ cargo --version
   ```bash
   claude skills的列表中出现gitee-cli
   ```
+## 使用说明
+- **全局skill中声明**：
+  由于claude总是默认你在使用github，所以在~/.claude/CLAUDE.md 中添加下一句
+  ```
+  * 当仓库是gitee.com时，使用gitee-cli操作远程库及相关资源(PR,issue,release,wiki,lables,notification)
+  ```
+- ** 设置本机的环境变量 **
+  # Linux / macOS
+  export GITEE_ACCESS_TOKEN="你的_令牌"
+  # Windows (CMD)
+  set GITEE_ACCESS_TOKEN="你的_令牌"
+- **重启claude后难**：
+  以操作issue为例，对话示例：
+    “创建一个issues ,仅title:gitee-cli测试成功” 
+    “关闭刚才创建的issues"
+  当然还可以操作PR、release等，由gitee这个客户端的命令提供的功能都可以
