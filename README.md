@@ -45,6 +45,7 @@ git clone https://github.com/tfenng/gitee-cli-skill.git ~/.claude/skills/gitee-c
 - **重启 claude 后验证**：
 
   gitee.com上的远程库的关联资源操作，提示词示例：
+  - "此项目的远程仓库还关联有哪些待办issues"
   - "创建一个 issues，仅 title:gitee-cli 测试成功"
   - "为刚才提交的分支创建一个 PR"
   - "创建一个新的 release"

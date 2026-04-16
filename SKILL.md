@@ -1,3 +1,8 @@
+---
+description: "当项目远程仓库为 gitee.com 时，使用此 skill 调用 gitee 命令管理仓库、Issue、PR、Releases 等资源"
+origin: user
+---
+
 ## 🧠 AI Skill: Gitee CLI (`gitee`)
 
 > 当工程项目的远程仓库是gitee.com时,使用gitee命令来管理代码的仓库、files、Issues、PR、releases 等资源。
