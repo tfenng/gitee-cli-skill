@@ -49,3 +49,11 @@ git clone https://github.com/tfenng/gitee-cli-skill.git ~/.claude/skills/gitee-c
   - "创建一个 issues，仅 title:gitee-cli 测试成功"
   - "为刚才提交的分支创建一个 PR"
   - "创建一个新的 release"
+
+
+## gitee-cli的补充信息与常见问题
+
+- **社区驱动**：`gitee-cli` 是第三方工具，非官方出品。
+- **错误排查**：遇到问题时，可以检查网络或 API 令牌权限，必要时可在官网查看 API 限制。
+- **获取更多帮助**：更多高级用法可查阅[项目文档](https://docs.rs/crate/gitee-cli/0.9.0)。
+- **高级集成**：该工具可作为 MCP 服务器，与 AI 环境集成，详见 `gitee install` 命令。
