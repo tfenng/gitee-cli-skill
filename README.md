@@ -47,9 +47,9 @@ cargo --version
 ## 此skill在Claude中的安装
 - **安装命令**：
   ```bash
-  claude skills install https://github.com/tfenng/gitee-cli-skill.git
+  在claude中提示： “把这个skill安装到用户级, https://github.com/tfenng/gitee-cli-skill.git”
   ```
 - **验证安装**：
   ```bash
-  claude skills list
+  claude skills的列表中出现gitee-cli
   ```
