@@ -22,9 +22,9 @@
 - **设置 Token**：在 Gitee 网页端“设置 -> 私人令牌”中生成一个令牌。
   ```bash
   # Linux / macOS
-  export GITEE_ACCESS_TOKEN="你的_令牌"
+  export GITEE_TOKEN="你的_令牌"
   # Windows (CMD)
-  set GITEE_ACCESS_TOKEN="你的_令牌"
+  set GITEE_TOKEN="你的_令牌"
   ```
 - **可选设置**：
   - `GITEE_API_BASE`: 默认 `https://gitee.com/api/v5`

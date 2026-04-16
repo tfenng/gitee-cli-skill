@@ -60,11 +60,11 @@ cargo --version
   * 当仓库是gitee.com时，使用gitee-cli操作远程库及相关资源(PR,issue,release,wiki,lables,notification)
   ```
 - ** 设置本机的环境变量 **
-  # Linux / macOS
+  ### Linux / macOS
   export GITEE_ACCESS_TOKEN="你的_令牌"
-  # Windows (CMD)
+  ### Windows (CMD)
   set GITEE_ACCESS_TOKEN="你的_令牌"
-- **重启claude后难**：
+- **重启claude后验证**：
   以操作issue为例，对话示例：
     “创建一个issues ,仅title:gitee-cli测试成功” 
     “关闭刚才创建的issues"
