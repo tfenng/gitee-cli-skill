@@ -1,12 +1,9 @@
 ---
-description: "当项目远程仓库为 gitee.com 时，使用此 skill 调用 gitee 命令管理仓库、Issue、PR、Releases 等资源"
+description: 当项目的远程仓库为 gitee.com 而非github时，使用此 skill 调用 gitee 命令管理仓库、Issue、PR、Releases、wiki、labels、 notifications 等相关资源
 origin: user
 ---
 
 ## 🧠 AI Skill: Gitee CLI (`gitee`)
-
-> 当工程项目的远程仓库是gitee.com时,使用gitee命令来管理代码的仓库、files、Issues、PR、releases 等资源。
-
 
 ### 1. 环境要求与安装
 
@@ -84,4 +81,3 @@ origin: user
 - **错误排查**：遇到问题时，可以检查网络或 API 令牌权限，必要时可在官网查看 API 限制。
 - **获取更多帮助**：更多高级用法可查阅[项目文档](https://docs.rs/crate/gitee-cli/0.9.0)。
 - **高级集成**：该工具可作为 MCP 服务器，与 AI 环境集成，详见 `gitee install` 命令。
-
