@@ -71,7 +71,7 @@ Arguments:
 
 **示例：**
 ```bash
-gitee repo info BearTony my-project
+gitee repo info owner my-project
 ```
 
 ##### repo delete - 删除仓库
@@ -159,7 +159,7 @@ Options:
 
 **示例：**
 ```bash
-gitee issues create BearTony my-project "Bug报告：登录失败" --body "复现步骤：..."
+gitee issues create owner my-project "Bug报告：登录失败" --body "复现步骤：..."
 ```
 
 ##### issues close - 关闭 Issue
@@ -280,7 +280,7 @@ Options:
 
 **示例：**
 ```bash
-gitee pr create BearTony my-project "添加新功能" --head feature-branch --base main --body "实现详情..."
+gitee pr create owner my-project "添加新功能" --head feature-branch --base main --body "实现详情..."
 ```
 
 ##### pr close - 关闭 Pull Request
@@ -390,7 +390,7 @@ Options:
 
 **示例：**
 ```bash
-gitee labels create BearTony my-project bug FF0000 --description "Bug 标签"
+gitee labels create owner my-project bug FF0000 --description "Bug 标签"
 ```
 
 ##### labels update - 更新标签
@@ -509,7 +509,7 @@ Options:
 
 **示例：**
 ```bash
-gitee releases create BearTony my-project v1.0.0 "版本 1.0.0" --body "首发版本"
+gitee releases create owner my-project v1.0.0 "版本 1.0.0" --body "首发版本"
 ```
 
 ### 11. Wiki 管理 (`wiki`)
@@ -567,13 +567,13 @@ Arguments:
 #### 创建 Issue 并指派
 ```bash
 # 1. 查看仓库信息
-gitee repo info BearTony my-project
+gitee repo info owner my-project
 
 # 2. 创建 Issue
-gitee issues create BearTony my-project "功能请求：添加导出功能" --body "希望添加导出为 CSV 的功能"
+gitee issues create owner my-project "功能请求：添加导出功能" --body "希望添加导出为 CSV 的功能"
 
 # 3. 查看 Issue
-gitee issues-ext detail BearTony my-project 1
+gitee issues-ext detail owner my-project 1
 ```
 
 #### 完整 PR 工作流
@@ -597,26 +597,26 @@ git commit -m "feat: add new feature"
 git push -u origin feature-branch
 
 # 6. 创建 PR
-gitee pr create BearTony my-project "添加新功能" --head feature-branch --base main --body "实现了..."
+gitee pr create owner my-project "添加新功能" --head feature-branch --base main --body "实现了..."
 
 # 7. 添加 PR 评论
-gitee pr-ext comment BearTony my-project 1 "代码审查建议：..."
+gitee pr-ext comment owner my-project 1 "代码审查建议：..."
 
 # 8. 合并 PR
-gitee pr merge BearTony my-project 1
+gitee pr merge owner my-project 1
 ```
 
 #### 管理标签
 ```bash
 # 1. 列出仓库标签
-gitee labels list BearTony my-project
+gitee labels list owner my-project
 
 # 2. 创建标签
-gitee labels create BearTony my-project bug FF0000 --description "Bug 问题"
+gitee labels create owner my-project bug FF0000 --description "Bug 问题"
 
 # 3. 更新标签颜色
-gitee labels update BearTony my-project bug --color "FF5500"
+gitee labels update owner my-project bug --color "FF5500"
 
 # 4. 删除标签
-gitee labels delete BearTony my-project bug
+gitee labels delete owner my-project bug
 ```
