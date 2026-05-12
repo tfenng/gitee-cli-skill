@@ -1,7 +1,23 @@
-# Gitee CLi Skill
+# Gitee CLI Skill
 
 Gitee CLI (Rust版) 是码云（Gitee）的非官方命令行工具，通过 API 高效管理仓库、Issue、PR 等资源。
-此技能专为 AI 编码助手设计，用于指导其使用该工具完成开发任务。
+此技能专为 AI 编码助手设计，用于在项目托管于 gitee.com 时操作代码仓库及相关资源。
+
+## Skill 结构
+
+```text
+.
+├── SKILL.md                         # 触发条件、agent 工作流、安全规则
+├── references/
+│   ├── command-reference.md         # gitee 子命令速查
+│   ├── workflows.md                 # 常见多步骤操作流程
+│   └── troubleshooting.md           # 认证、权限、远程地址排错
+├── agents/openai.yaml               # skill UI 元数据
+├── cargo.md                         # Rust 与 Cargo 安装说明
+└── CLAUDE.md                        # Claude Code 仓库说明
+```
+
+`SKILL.md` 保持精简，详细命令和流程按需从 `references/` 加载。
 
 ## 前置依赖
 
@@ -54,9 +70,9 @@ git clone https://github.com/tfenng/gitee-cli-skill.git ~/.claude/skills/gitee-c
   - "打开当前仓库的Wiki"
 
 
-## gitee-cli的补充信息与常见问题
+## gitee-cli 的补充信息与常见问题
 
 - **社区驱动**：`gitee-cli` 是第三方工具，非官方出品。
-- **错误排查**：遇到问题时，可以检查网络或 API 令牌权限，必要时可在官网查看 API 限制。
+- **错误排查**：遇到问题时，优先查看 `references/troubleshooting.md`。
 - **获取更多帮助**：更多高级用法可查阅[项目文档](https://docs.rs/crate/gitee-cli/0.9.0)。
 - **高级集成**：该工具可作为 MCP 服务器，与 AI 环境集成，详见 `gitee install` 命令。

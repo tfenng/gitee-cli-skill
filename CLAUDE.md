@@ -8,7 +8,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 目录结构
 
-- `gitee-cli/SKILL.md` — Claude Code 技能定义文件，定义 gitee 命令的使用方式
+- `SKILL.md` — 技能入口文件，定义触发条件、agent 工作流和安全规则
+- `references/command-reference.md` — `gitee` 子命令速查
+- `references/workflows.md` — Issue、PR、Release 等常见任务流程
+- `references/troubleshooting.md` — 认证、权限、远程地址等排错指南
+- `agents/openai.yaml` — skill UI 元数据
 - `README.md` — 安装与使用说明
 
 ## 环境要求
@@ -28,14 +32,18 @@ export GITEE_TOKEN="你的令牌"
 ## 常用命令
 
 ```bash
-gitee repo list|create|view|delete|fork|search
-gitee issues list|create|view|comment|close
-gitee pr list|create|view|checkout|comment|merge|close
+gitee repo list|create|info|delete
+gitee issues list|create|close
+gitee issues-ext detail|update|comment|list-comments
+gitee pr list|create|close|merge
+gitee pr-ext detail|update|comment|list-comments|diff-files
 gitee files|releases|wiki|labels|notifications|user
 ```
 
 ## 注意事项
 
-- 涉及 `--repo` 参数时，使用 `owner/repo-name` 格式
+- 优先通过 `git remote -v` 判断当前仓库是否托管在 gitee.com
+- 多数 `gitee` 命令使用分离的 `<OWNER> <REPO>` 参数；仅在命令明确要求时使用 `owner/repo-name`
 - 复杂任务（如完整 PR 工作流）应分解为多个步骤执行
 - 运行 `gitee <子命令> --help` 获取详细帮助
+- 删除、关闭、合并等远程状态变更操作前，先向用户确认目标与意图

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Gitee CLI"
+  short_description: "Operate Gitee repos, PRs, issues, and releases"
+  default_prompt: "Use $gitee-cli to inspect and manage this Gitee repository."
+
+policy:
+  allow_implicit_invocation: true
