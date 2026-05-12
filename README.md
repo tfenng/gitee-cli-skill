@@ -46,6 +46,15 @@ git clone https://github.com/tfenng/gitee-cli-skill.git ~/.claude/skills/gitee-c
 进入claude 后
 /skills # 列表中应出现 gitee-cli
 
+## 此 skill 在 Codex 中的安装
+
+```bash
+git clone https://github.com/tfenng/gitee-cli-skill.git ~/.codex/skills/gitee-cli
+```
+
+验证安装：
+重启 Codex 后，在需要操作 gitee.com 仓库、Issue 或 PR 时，此 skill 应能按描述自动触发；也可以在提示词中显式使用 `$gitee-cli`。
+
 ## 使用说明
 
 - **设置本机的环境变量**
